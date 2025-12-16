@@ -339,52 +339,87 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-secondary text-white py-12 px-4">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Waves" size={28} />
-                <span className="text-xl font-bold">GreenWave Studio</span>
+      <footer className="relative bg-gradient-to-br from-secondary via-secondary to-primary/20 text-white py-16 px-4 overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
+              <div className="flex items-center gap-2 mb-6">
+                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                  <Icon name="Waves" size={28} className="text-primary" />
+                </div>
+                <span className="text-2xl font-bold">GreenWave</span>
               </div>
-              <p className="text-gray-300">
-                Создаём цифровые решения для вашего бизнеса
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Создаём цифровые решения, которые помогают бизнесу расти
               </p>
-            </div>
-            
-            <div>
-              <h3 className="font-bold mb-4">Услуги</h3>
-              <ul className="space-y-2 text-gray-300">
-                <li>Разработка сайтов</li>
-                <li>Мобильные приложения</li>
-                <li>UX/UI дизайн</li>
-                <li>SEO продвижение</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-bold mb-4">Компания</h3>
-              <ul className="space-y-2 text-gray-300">
-                <li>О нас</li>
-                <li>Команда</li>
-                <li>Портфолио</li>
-                <li>Карьера</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-bold mb-4">Социальные сети</h3>
-              <div className="flex gap-4">
-                <Icon name="Facebook" className="cursor-pointer hover:text-primary transition-colors" size={24} />
-                <Icon name="Twitter" className="cursor-pointer hover:text-primary transition-colors" size={24} />
-                <Icon name="Instagram" className="cursor-pointer hover:text-primary transition-colors" size={24} />
-                <Icon name="Linkedin" className="cursor-pointer hover:text-primary transition-colors" size={24} />
+              <div className="flex gap-3">
+                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-primary/30 rounded-lg flex items-center justify-center transition-all hover:scale-110 backdrop-blur-sm">
+                  <Icon name="Facebook" size={20} />
+                </a>
+                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-primary/30 rounded-lg flex items-center justify-center transition-all hover:scale-110 backdrop-blur-sm">
+                  <Icon name="Twitter" size={20} />
+                </a>
+                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-primary/30 rounded-lg flex items-center justify-center transition-all hover:scale-110 backdrop-blur-sm">
+                  <Icon name="Instagram" size={20} />
+                </a>
+                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-primary/30 rounded-lg flex items-center justify-center transition-all hover:scale-110 backdrop-blur-sm">
+                  <Icon name="Linkedin" size={20} />
+                </a>
               </div>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-6 text-primary">Услуги</h3>
+              <ul className="space-y-3">
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Разработка сайтов</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Интернет-магазины</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Мобильные приложения</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">UX/UI дизайн</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">SEO продвижение</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-6 text-primary">Компания</h3>
+              <ul className="space-y-3">
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">О нас</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Команда</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Портфолио</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Карьера</li>
+                <li className="text-gray-300 hover:text-white hover:translate-x-1 transition-all cursor-pointer">Блог</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-6 text-primary">Контакты</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-gray-300">
+                  <Icon name="Mail" size={18} className="text-primary mt-1" />
+                  <span>hello@greenwave.studio</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-300">
+                  <Icon name="Phone" size={18} className="text-primary mt-1" />
+                  <span>+7 (495) 123-45-67</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-300">
+                  <Icon name="MapPin" size={18} className="text-primary mt-1" />
+                  <span>Москва, ул. Тверская, д. 1</span>
+                </li>
+              </ul>
             </div>
           </div>
           
-          <div className="border-t border-gray-600 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 GreenWave Studio. Все права защищены.</p>
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm">&copy; 2024 GreenWave Studio. Все права защищены.</p>
+            <div className="flex gap-6 text-sm text-gray-400">
+              <a href="#" className="hover:text-primary transition-colors">Политика конфиденциальности</a>
+              <a href="#" className="hover:text-primary transition-colors">Условия использования</a>
+            </div>
           </div>
         </div>
       </footer>
