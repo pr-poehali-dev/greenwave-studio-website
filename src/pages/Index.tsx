@@ -339,13 +339,8 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="relative bg-gradient-to-br from-secondary via-secondary to-primary/20 text-white py-16 px-4 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        </div>
-        
-        <div className="container mx-auto relative z-10">
+      <footer className="bg-secondary text-white py-16 px-4">
+        <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-1">
               <div className="flex items-center gap-2 mb-6">
